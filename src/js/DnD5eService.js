@@ -1,4 +1,4 @@
-export default class DnD {  
+export default class DnD5eService {  
   static getMonsters(challenge_rating) {
     return fetch(`https://api.open5e.com/monsters/?challenge_rating=${challenge_rating}`)
       .then(function(response) {

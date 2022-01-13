@@ -2,7 +2,7 @@ import $ from "jquery";
 import 'bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './css/styles.css';
-import './js/DnD5eService'; 
+import DnD5eService from "./js/DnD5eService";
 
 
 
@@ -16,7 +16,7 @@ function getMonsters(response) {
 $(document).ready(function() {
   $('#formOne').click(function() {
     let ratings = $('#challenge_rating').val();
-    DnD.getMonsters(ratings)
+    DnD5eService.getMonsters(ratings)
       .then(function(response) {
         getMonsters(response);
       });
