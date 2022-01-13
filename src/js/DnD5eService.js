@@ -9,6 +9,6 @@ export default class DnD5eService {
       })
       .catch(function(error) {
         return error;
-      })
+      });
   }
 }
