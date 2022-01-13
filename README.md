@@ -1,12 +1,8 @@
-# _{Application name here}_
+# _DnD Api Testing_
 
-#### By _**{List of contributors}**_
+#### By _**Amber Wilwand, Patrick Dolan, and Wajima Niazi**_
 
-#### _{Brief description of application}_
-
-## Github Pages Link
-
-[TITLE HERE Github Pages](https://patrick-dolan.github.io/APPLICATIONNAMEHERE/)
+#### _A small application to run through API usage before a test_
 
 ## Technologies Used
 
@@ -15,32 +11,24 @@
 * _Javascript & jQuery_
 * _NPM & Webpack_
 
-## Description
-
-_{This is a detailed description of your application. Give as much detail as needed to explain what the application does as well as any other information you want users or other developers to have.}_
-
 ## Setup/Installation Requirements
 
-* _This is a great place_
-* _to list setup instructions_
-* _in a simple_
-* _easy-to-understand_
-* _format_
-
-_{Leave nothing to chance! You want it to be easy for potential users, employers and collaborators to run your app. Do I need to run a server? How should I set up my databases? Is there other code this application depends on? We recommend deleting the project from your desktop, re-cloning the project from GitHub, and writing down all the steps necessary to get the project working again.}_
+* _Download/Clone repo to your pc._
+* _Open with your Code Editor/Terminal of choice._
+* _Navigate to the dnd-api-testing repo in your terminal and run the following command to setup dependencies:<br><code>npm install</code>_
+* _This program doesnt require an API key so run the following command after the installation is complete to launch:<br><code>npm run start</code>_
 
 ## Known Bugs
 
-* _Any known issues_
-* _should go here_
+* _Sometimes the information isnt written to the dom from the api_
 
 ## Contact Me
 
 _Let me know if you run into any issues or have questions, ideas or concerns:_
-_[Author Email Here]_
+_dolanp1992@gmail.com_
 
 ## License
 
 _{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
 
-Copyright (c) _date_ _author name(s)_
+Copyright (c) _2022_ _Amber Wilwand, Patrick Dolan, and Wajima Niazi_
