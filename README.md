@@ -28,29 +28,8 @@ __Please go to https://github.com/WNiazi/Project_CurrencyExchange list git hub p
 * _Put "npm install" in terminal to install packages (including dotenv-webpack@2.0.0 --save dev), then "npm run build"
 * _Put "npm run start" in terminal
 
-## Testing
-``` 
-Describe: Creating a webpage to exchange currency.  
-```
-Test: Creating fetch property which will bring in the Object.
-Code: 
-Expected Output:  
-```
-Test: It will bring in other currency from various other countries 
-Code:    
-Expected Output:  
-```
-Test:  It will go from US to another countries currency. 
-Code:  
-Expected Output:   
-```
-Test: It will allow to choose multiple other countries and able to convert currency  
-Code:   
-Expected Output: 
-```
-
 ## Known Bugs
-* _none at this time  
+* _Unable to open the project, or the terminal  
 
 ## License
 

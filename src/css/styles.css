@@ -1,0 +1,14 @@
+
+.container {
+  background-color: rgb(5, 5, 5);
+  text-align: justify;
+  padding: 20rem;
+}
+
+#formOne{ 
+  background-color: rgb(49, 141, 202);
+  outline-style: auto;
+}
+.submit { 
+  padding-top: 5rem;
+}

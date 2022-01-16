@@ -5,14 +5,13 @@
   </head>
   <body>
     <form id = "formOne">
-      <h1> Currency Converter</h1>
-
-       <div class="fromCurrencyCode">
+      <div id ="container">
+        <h1> Currency Converter</h1>
+        <div class="fromCurrencyCode">
          <h4>What kind of money do you have?</h2>
          <input id="fromCurrency-amount" placeholder="1234567890"></input>
           <select>
             <option value ="AED">	UAE Dirham United Arab Emirates</option>
-            <option value ="AFN">	Afghan Afghani </option>
             <option value ="AFN">	Afghan Afghani	Afghanistan </option>
             <option value ="ALL">	Albanian Lek	Albania  </option>
             <option value ="AMD">	Armenian Dram	Armenia </option>
@@ -343,16 +342,11 @@
            <option value ="ZWL"> Zimbabwean Dollar	Zimbabwe</option>
           </select> 
         </div>
-        
-        <div class="exchange-rate"></div>
-          <p>  equal </p>
-          <h4> this in </h1>
-
         <button class = "btn-success" type = "submit" id = "submit">Convert</button>
-        
-        <div class ="showConvertTotal"></div>
-          <input id="toCurrency-amount" value =""></input>
+      </div> 
     </form>
+    <div class="showRate"></div>
+    <div class="showOutput"></div>
     <div class="showErrors"></div>
   </body>
 </html>
