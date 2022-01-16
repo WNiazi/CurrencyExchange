@@ -16,7 +16,7 @@ module.exports = {
     new Dotenv(),
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
-      title: 'jsDevEnvironmentTemplate',
+      title: 'template',
       template: './src/index.html',
       inject: 'body'
     })

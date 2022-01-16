@@ -1,34 +1,59 @@
-# _DnD Api Testing_
+# Project_Currency_Exchange 
 
-#### By _**Amber Wilwand, Patrick Dolan, and Wajima Niazi**_
+#### By Wajma Niazi
 
-#### _A small application to run through API usage before a test_
+#### Creating application which checks exchange rate in various countries. 
 
 ## Technologies Used
 
-* _HTML_
-* _CSS & Bootstrap_
-* _Javascript & jQuery_
-* _NPM & Webpack_
+* VS Code
+* CSS 
+* HTML 
+* jQuery
+* Bootstrap
+* Webpack/NPM 
+* API
+
+## Description
+
+__From User's Inputs amount they would like to exchange and it converts to various other types of currency of their choice. 
+
+__Please go to https://github.com/WNiazi/Project_CurrencyExchange list git hub page to view project.  
 
 ## Setup/Installation Requirements
+* _Clone Repository to your desktop  
+* _Put "npm install" in terminal to install packages, then "npm run build"
+* _Go onto the website :https://www.exchangerate-api.com/ to create a API_Key to use for the project 
+* _Add it to the .env folder,created and place in gitignore folder 
+* _Put "npm install" in terminal to install packages (including dotenv-webpack@2.0.0 --save dev), then "npm run build"
+* _Put "npm run start" in terminal
 
-* _Download/Clone repo to your pc._
-* _Open with your Code Editor/Terminal of choice._
-* _Navigate to the dnd-api-testing repo in your terminal and run the following command to setup dependencies:<br><code>npm install</code>_
-* _This program doesnt require an API key so run the following command after the installation is complete to launch:<br><code>npm run start</code>_
+## Testing
+``` 
+Describe: Creating a webpage to exchange currency.  
+```
+Test: Creating fetch property which will bring in the Object.
+Code: 
+Expected Output:  
+```
+Test: It will bring in other currency from various other countries 
+Code:    
+Expected Output:  
+```
+Test:  It will go from US to another countries currency. 
+Code:  
+Expected Output:   
+```
+Test: It will allow to choose multiple other countries and able to convert currency  
+Code:   
+Expected Output: 
+```
 
 ## Known Bugs
-
-* _Sometimes the information isnt written to the dom from the api_
-
-## Contact Me
-
-_Let me know if you run into any issues or have questions, ideas or concerns:_
-_dolanp1992@gmail.com_
+* _none at this time  
 
 ## License
 
-_{Let people know what to do if they run into any issues or have questions, ideas or concerns.  Encourage them to contact you or make a contribution to the code.}_
+_MIT
 
-Copyright (c) _2022_ _Amber Wilwand, Patrick Dolan, and Wajima Niazi_
+Copyright (c) 2022 Wajma Niazi
