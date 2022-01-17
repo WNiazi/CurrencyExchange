@@ -1,14 +1,18 @@
 
-.container {
+body {
   background-color: rgb(5, 5, 5);
-  text-align: justify;
-  padding: 20rem;
 }
-
-#formOne{ 
+#formOne { 
   background-color: rgb(49, 141, 202);
-  outline-style: auto;
+  text-align: center;
 }
-.submit { 
-  padding-top: 5rem;
+.fromCurrencyCode{ 
+padding-left: 20rem;
+padding-right: 20rem;
+}
+h4 { 
+  padding: 0.5rem; 
+}
+#submit { 
+  padding: 0.25rem; 
 }
