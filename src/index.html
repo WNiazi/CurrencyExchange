@@ -8,9 +8,11 @@
       <div id ="container">
         <h1> Currency Converter</h1>
         <div class="fromCurrencyCode">
-         <h4>What kind of money do you have?</h2>
-         <input id="fromCurrency-amount" placeholder="1234567890"></input>
-          <select>
+          <h4>How much money do you have?</h4>
+          <input type="number" id="fromCurrency-amount" name="quantity">
+          <h4>What kind of money do you have?</h2>
+        <div class="form-group">
+          <select class="form-control" id="fromCurrencyCode" placeholder = "1234567890" aria-label="Default select example">
             <option value ="AED">	UAE Dirham United Arab Emirates</option>
             <option value ="AFN">	Afghan Afghani	Afghanistan </option>
             <option value ="ALL">	Albanian Lek	Albania  </option>
@@ -172,13 +174,11 @@
             <option value ="ZAR"> South African Rand	South Africa</option>
             <option value ="ZMW"> Zambian Kwacha	Zambia</option>
             <option value ="ZWL"> Zimbabwean Dollar	Zimbabwe</option>
-            
           </select> 
        </div>
-       
-       <div class ="toCurrencyCode">
-         <h4>What kind of money do you want?</h2>
-         <select>
+       <h4>What kind of money do you want?</h2>
+       <div class ="form-group">
+         <select class="form-control" id="toCurrencyCode" placeholder = "1234567890" aria-label="Default select example">
            <option value ="AED">	UAE Dirham 	United Arab Emirates</option>
            <option value ="AFN">	Afghan Afghani	Afghanistan </option>
            <option value ="ALL">	Albanian Lek	Albania  </option>

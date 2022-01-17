@@ -5,19 +5,24 @@ import './css/styles.css';
 import CurrencyExchange from './js/CurrencyExchange';
 
 function clearFields() {
-  $('.fromCurrencyCode select').val("");
-  $('#fromCurrency-amount').val("");
-  $('.toCurrencyCode select').val("");
+  $("#fromCurrencyCode").val("");
+  $("#fromCurrency-amount").val("");
+  $("#toCurrencyCode").val("");
   $('.showErrors').text("");
   $('.showRate').text("");
   $('.showOuput').text("");
 }
 
 $(document).ready(function() {
-  $('#submit').click(function() {
-    const fromCurrencyCode = $('.fromCurrencyCode select');
-    const amount = $('#fromCurrency-amount');
-    const toCurrencyCode = $('.toCurrencyCode select');
+  $('#formOne').submit(function(event) {
+    console.log ("hello");
+    event.preventDefault(); 
+    const fromCurrencyCode = $("#fromCurrencyCode").val();
+    console.log (fromCurrencyCode);
+    const amount = parseInt($("#fromCurrency-amount").val());
+    console.log(amount); 
+    const toCurrencyCode = $("#toCurrencyCode").val();
+    console.log (toCurrencyCode); 
     clearFields();
     CurrencyExchange.getConversion(fromCurrencyCode, toCurrencyCode, amount)
       .then(function(response) {
