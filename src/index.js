@@ -13,6 +13,19 @@ function clearFields() {
   $('.showOuput').text("");
 }
 
+
+function getElements(response) {
+  if (response.statusText === typeOf Error) { 
+    $('.showErrors').text(`There was an error: ${response}`)
+  } else if (response.toCurrencyCode=== undefined) { 
+    $('.showErrors').text(`There was an error: ${response}`)
+  } else (response.conversion_rate)
+        const rate = response.conversion_rate; 
+        const total = amount * rate; 
+        $('.showRate').text(`The conversion rate between ${toCurrencyCode} and ${fromCurrencyCode} is ${rate}`);
+        $('.showOutput').text(`The new amount is ${total}`);    
+}
+
 $(document).ready(function() {
   $('#formOne').submit(function(event) {
     event.preventDefault(); 
@@ -22,14 +35,7 @@ $(document).ready(function() {
     clearFields();
     CurrencyExchange.getConversion(fromCurrencyCode, toCurrencyCode, amount)
       .then(function(response) {
-        if (response.conversion_rate){ 
-          const rate = response.conversion_rate; 
-          const total = amount * rate; 
-          $('.showRate').text(`The conversion rate between ${toCurrencyCode} and ${fromCurrencyCode} is ${rate}`);
-          $('.showOutput').text(`The new amount is ${total}`);
-        } else {
-          $('#showErrors').text(`There was an error: ${response.message}`)
-        }
+        getElements(response); 
       });
     });
 });

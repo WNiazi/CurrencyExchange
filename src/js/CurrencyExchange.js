@@ -1,6 +1,6 @@
 export default class CurrencyExchange {  
   static  getConversion(fromCurrencyCode, toCurrencyCode) {
-    return fetch(`https://v6.exchangerate-api.com/v6/89a0fdddabe5432a7021771e/pair/${fromCurrencyCode}/${toCurrencyCode}`)
+    return fetch(`https://v6.exchangerate-api.com/v6/${process.env.API_KEY}/pair/${fromCurrencyCode}/${toCurrencyCode}`)
       .then(function(response) {
         if (!response.ok) {
           throw Error(response.statusText);
@@ -13,10 +13,3 @@ export default class CurrencyExchange {
   }
 }
 
-// • Substitute `GBP` with the code you want to use as a target currency.
-// https://v6.exchangerate-api.com/v6/YOUR-API-KEY/pair/EUR/GBP
-// "base_code": "USD",
-// "target_code": "INR",
-// "conversion_rate": 74.1685
-// :89a0fdddabe5432a7021771e
-// ${process.env.API_KEY}
