@@ -15,7 +15,7 @@ function clearFields() {
 
 
 function getElements(response) {
-  if (response.statusText === typeOf Error) { 
+  if (typeof response === typeof Error) { 
     $('.showErrors').text(`There was an error: ${response}`)
   } else if (response.toCurrencyCode=== undefined) { 
     $('.showErrors').text(`There was an error: ${response}`)
